@@ -7,6 +7,7 @@ module.exports = {
     const browser = await browse.openBrowser();
     const page = await browse.openPage(browser);
   
+    await browse.interceptAdRequests(page)
     await url.visit(page, url.team(domain, team, teamId, year));
     const playerNames = await extract.playerNames(page);
 

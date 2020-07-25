@@ -1,6 +1,6 @@
 const team = require("./team");
 
-const timeout = 30000
+const timeout = 10000
 jest.setTimeout(timeout); 
 
 test(`runs in less than ${timeout} ms`, async () => {
