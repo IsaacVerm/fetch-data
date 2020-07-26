@@ -1,0 +1,1 @@
+Run `fetch.js` in the root folder.
